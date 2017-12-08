@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PetEditorActivity">
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_pet_edit_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        app:showAsAction="always"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_pet_edit_save"
+        android:title="@string/menu_save"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_done_white_24dp"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_pet_edit_delete"
+        android:title="@string/menu_delete"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_pet_edit_contact_us"
+        android:title="@string/menu_contact_us"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_pet_edit_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+</menu>

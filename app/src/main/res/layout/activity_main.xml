@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.danjureedeveloper.shelter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Page Header Linear Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="start"
+                android:src="@drawable/iwv_seal"
+                android:contentDescription="@string/string_seal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorDarkText"
+                android:text="@string/string_motto"/>
+
+        </LinearLayout>
+
+        <!-- TODO link to the Pet List -->
+        <!-- Pet List Clickable Linear Layout -->
+        <LinearLayout
+            android:id="@+id/linear_layout_main_pets_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/iwv_pets"
+                android:contentDescription="@string/string_pets"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/string_adopt_friend"/>
+
+        </LinearLayout>
+
+        <!-- Border/Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            android:textColor="@color/colorDarkText"
+            android:textStyle="bold"
+            android:text="@string/string_help_out"/>
+
+        <!-- TODO link to the brick order form -->
+        <!-- Brick Donation Clickable Linear Layout -->
+        <LinearLayout
+            android:id="@+id/linear_layout_main_brick_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/iwv_brick"
+                android:contentDescription="@string/string_brick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/string_order_your_brick"/>
+
+        </LinearLayout>
+
+        <!-- Footer Linear Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_copyright"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_city_state_zip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/app_developer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danjureedeveloper.shelter.PetEditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Pet Name -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_edit_name"/>
+
+        <EditText
+            android:id="@+id/edit_text_pet_edit_name"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pet_edit_name"
+            android:inputType="textCapWords"/>
+
+        <!-- Pet Image -->
+        <RelativeLayout
+            android:id="@+id/relative_layout_pet_edit_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/image_view_pet_edit_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/ic_photo_black_48dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/image_view_pet_edit_no_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:tint="@color/colorLightText"
+                android:src="@drawable/ic_photo_black_48dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/text_view_pet_edit_no_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/pet_edit_add_photo"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <!-- Pet Description -->
+        <Spinner
+            android:id="@+id/spinner_pet_edit_type"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_edit_type"/>
+
+        <EditText
+            android:id="@+id/edit_text_pet_edit_type"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pet_edit_type"
+            android:inputType="textCapWords"/>
+
+        <!-- Pet Age -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_edit_age"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_pet_edit_years"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/pet_edit_zero"
+                android:inputType="number"
+                android:maxLength="2"/>
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_years"/>
+
+            <EditText
+                android:id="@+id/edit_text_pet_edit_months"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/pet_edit_zero"
+                android:inputType="number"
+                android:maxLength="2"/>
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_months"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_pet_edit_generation"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Pet Gender -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_gender"/>
+
+            <Spinner
+                android:id="@+id/spinner_pet_edit_gender"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <!-- Pet Size -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_pet_edit_lbs"
+                    style="@style/styleMandatoryEditTextBox"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/pet_edit_zero"
+                    android:inputType="number"
+                    android:maxLength="3"/>
+
+                <TextView
+                    style="@style/styleEditTextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pet_edit_pounds"/>
+
+                <EditText
+                    android:id="@+id/edit_text_pet_edit_oz"
+                    style="@style/styleMandatoryEditTextBox"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/pet_edit_zero"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+
+                <TextView
+                    style="@style/styleEditTextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pet_edit_ounces"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_pet_edit_size"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <!-- Shelter -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_edit_location"/>
+
+        <EditText
+            android:id="@+id/edit_text_pet_edit_shelter"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pet_edit_shelter"
+            android:inputType="textCapWords" />
+
+        <!-- Shelter City -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_edit_city"/>
+
+        <EditText
+            android:id="@+id/edit_text_pet_edit_city"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pet_edit_city"
+            android:inputType="textCapWords" />
+
+        <!-- Shelter State -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_state"/>
+
+            <Spinner
+                android:id="@+id/spinner_pet_edit_state"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <!-- Shelter ZipCode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_edit_zip"/>
+
+            <EditText
+                android:id="@+id/edit_text_pet_edit_zip_code"
+                style="@style/styleMandatoryEditTextBox"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/pet_edit_zip"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This String[] contains the options for a pet's age -->
+    <string-array name="array_generation_options">
+        <item>@string/age_unknown</item>
+        <item>@string/age_baby</item>
+        <item>@string/age_adult</item>
+    </string-array>
+
+    <!-- This String[] contains the options for a pet's gender -->
+    <string-array name="array_gender_options">
+        <item>@string/gender_unknown</item>
+        <item>@string/gender_female</item>
+        <item>@string/gender_male</item>
+    </string-array>
+
+    <!-- This String[] contains the options for a pet's size -->
+    <string-array name="array_size_options">
+        <item>@string/size_unknown</item>
+        <item>@string/size_small</item>
+        <item>@string/size_medium</item>
+        <item>@string/size_large</item>
+    </string-array>
+
+</resources>

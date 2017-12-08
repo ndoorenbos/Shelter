@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderFormActivity">
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        app:showAsAction="always"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_news"
+        android:title="@string/menu_news"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_fund"
+        android:title="@string/menu_fund"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_donate"
+        android:title="@string/menu_donate"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_contact_us"
+        android:title="@string/menu_contact_us"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="ifRoom"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_order_form_signin"
+        android:title="@string/menu_sign_in"
+        app:showAsAction="never"/>
+
+</menu>

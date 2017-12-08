@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_pet_card"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="#000000">
+
+        <!-- TODO link visibility to photo -->
+        <ImageView
+            android:id="@+id/image_view_card_no_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_insert_emoticon_white_48dp"
+            android:visibility="visible"/>
+
+        <!-- TODO link to the pet photo and visibility -->
+        <ImageView
+            android:id="@+id/image_view_pet_card"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <!-- TODO link to pet name -->
+        <TextView
+            android:id="@+id/text_view_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            tools:text="Princess Peach"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="160dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp">
+
+        <!-- TODO link to pet description  -->
+        <TextView
+            android:id="@+id/text_view_card_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorDarkText"
+            android:textSize="16sp"
+            tools:text="Tabby Cat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- TODO link to age description -->
+            <TextView
+                android:id="@+id/text_view_card_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorDarkText"
+                android:textSize="14sp"
+                tools:text="Adult"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"/>
+
+            <!-- TODO link to pet gender -->
+            <TextView
+                android:id="@+id/text_view_card_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorDarkText"
+                android:textSize="14sp"
+                tools:text="Female"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"/>
+
+            <!-- TODO link to pet size description -->
+            <TextView
+                android:id="@+id/text_view_card_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorDarkText"
+                android:textSize="14sp"
+                tools:text="Small"/>
+
+        </LinearLayout>
+
+        <!-- TODO link to pet shelter -->
+        <TextView
+            android:id="@+id/text_view_card_shelter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorDarkText"
+            android:textSize="14sp"
+            tools:text="IWV Humane Society"/>
+
+        <!-- TODO link to shelter location -->
+        <TextView
+            android:id="@+id/text_view_card_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorDarkText"
+            android:textSize="14sp"
+            tools:text="Ridgecrest, CA"/>
+
+    </LinearLayout>
+
+</LinearLayout>

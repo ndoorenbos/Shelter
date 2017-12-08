@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pet_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danjureedeveloper.shelter.CardListActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <!-- Progress Circle -->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <!-- TODO make this not visible after load -->
+
+    <!-- TODO make this turn visible if nothing is found in the list -->
+    <!-- Error LinearLayout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_pet_list_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_error_outline_white_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightText"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/no_pets_found"/>
+
+    </LinearLayout>
+
+    <!-- Shows the list of pets stored in the database -->
+    <ListView
+        android:id="@+id/list_view_pet_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <!-- TODO populate the list view -->
+
+    <!-- Footer Linear Layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_pet_list_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_copyright"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_city_state_zip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/app_developer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_pet_list_paw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/image_view_list_add_pet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pets_white_24dp"
+                android:visibility="gone"/>
+
+            <!-- TODO make this visible only when signed-in -->
+            <!-- TODO link to blank pet editor -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

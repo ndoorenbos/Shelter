@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_adopt"
+        android:title="@string/menu_adopt"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_news"
+        android:title="@string/menu_news"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_fund"
+        android:title="@string/menu_fund"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_donate"
+        android:title="@string/menu_donate"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_contact_us"
+        android:title="@string/menu_contact_us"
+        app:showAsAction="never"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <!-- TODO activate this menu item -->
+    <item
+        android:id="@+id/menu_main_signin"
+        android:title="@string/menu_sign_in"
+        app:showAsAction="never"/>
+
+</menu>

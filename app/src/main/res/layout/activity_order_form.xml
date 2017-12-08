@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danjureedeveloper.shelter.OrderFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- User Information -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_first_name"/>
+
+        <!-- TODO link all the fields -->
+        <EditText
+            android:id="@+id/edit_text_brick_first_name"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_first_name"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_last_name"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_last_name"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_last_name"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_address"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_address_1"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_address"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_address_2"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_optional"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_city"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_city"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_city"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_state"/>
+
+        <Spinner
+            android:id="@+id/spinner_brick_state"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_zip"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_zip_code"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_zip"
+            android:inputType="number"
+            android:maxLength="5"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_email"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_email"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_email"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_phone"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_phone"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_phone"
+            android:inputType="phone"/>
+
+        <!-- Information for brick -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/order_small_brick_price"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="@string/order_character_count"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_first_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line1"
+            style="@style/styleMandatoryEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_1_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_second_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line2"
+            style="@style/styleAdditionalEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_2_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_third_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line3"
+            style="@style/styleAdditionalEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_3_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/order_large_brick_price"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_fourth_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line4"
+            style="@style/styleAdditionalEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_4_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_fifth_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line5"
+            style="@style/styleAdditionalEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_5_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_sixth_line"/>
+
+        <EditText
+            android:id="@+id/edit_text_brick_line6"
+            style="@style/styleAdditionalEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_enter_characters"
+            android:inputType="text"
+            android:maxLength="18"/>
+
+        <TextView
+            android:id="@+id/text_view_brick_line_6_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="@string/order_characters_left"/>
+
+        <!-- Payment Information -->
+        <TextView
+            style="@style/styleEditTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/order_payment_type"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_button_brick_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/order_cash"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_brick_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/order_check"/>
+
+        </RadioGroup>
+
+        <!-- Pay by check Linear Layout -->
+        <LinearLayout
+            android:id="@+id/linear_layout_brick_pay_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_checks_payable"/>
+
+            <TextView
+                style="@style/styleEditTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/business_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/styleEditTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_check_number"/>
+
+                <TextView
+                    style="@style/styleEditTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_amount"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_brick_check_number"
+                    style="@style/styleMandatoryEditTextBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/edit_text_brick_check_amount"
+                    style="@style/styleMandatoryEditTextBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Mail To Address Linear Layout -->
+        <LinearLayout
+            android:id="@+id/brick_linear_layout_mail_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/order_mail_to"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/business_mailing_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:text="@string/business_mailing_city_state_zip"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_brick_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorDarkText"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/order_submit"/>
+
+        <!-- Footer Linear Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_copyright"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_city_state_zip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/business_phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorLightText"
+                android:textSize="12sp"
+                android:text="@string/app_developer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
